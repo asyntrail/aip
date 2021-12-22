@@ -1,0 +1,27 @@
+--- title: Index page --- {% extends "layouts/_layout.html" %} {% block content %}
+<div class="container">
+    <form class="count-form">
+        <table>
+            <tr>
+                <th></th>
+                <th>Value 1</th>
+                <th>Value 2</th>
+                <th>Value 3</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <th><input id="val1" required value="1" /></th>
+                <th><input id="val2" style="display:inline;" required value="2" /></th>
+                <th><input id="val3" required value="2" /></th>
+                <th><span id="total"></span></th>
+            </tr>
+        </table>
+        <button id="switch" type="button">Switch</button>
+        <button id="next" type="button">Count</button>
+
+    </form>
+
+</div>
+
+
+{% endblock %}
